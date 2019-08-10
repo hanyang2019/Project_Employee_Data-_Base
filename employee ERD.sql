@@ -1,4 +1,5 @@
 ﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- Link to schema: https://app.quickdatabasediagrams.com/#/d/0bnAoZ
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
@@ -11,25 +12,17 @@ CREATE TABLE "departments" (
 );
 
 CREATE TABLE "dept_emp" (
-    "id" SERIAL   NOT NULL,
     "emp_no" INT   NOT NULL,
     "dept_no" VARCHAR(30)   NOT NULL,
     "from_date" DATE   NOT NULL,
-    "to_date" DATE   NOT NULL,
-    CONSTRAINT "pk_dept_emp" PRIMARY KEY (
-        "id"
-     )
+    "to_date" DATE   NOT NULL
 );
 
 CREATE TABLE "dept_manager" (
-    "id" SERIAL   NOT NULL,
     "dept_no" VARCHAR(30)   NOT NULL,
     "emp_no" INT   NOT NULL,
     "from_date" DATE   NOT NULL,
-    "to_date" DATE   NOT NULL,
-    CONSTRAINT "pk_dept_manager" PRIMARY KEY (
-        "id"
-     )
+    "to_date" DATE   NOT NULL
 );
 
 CREATE TABLE "employees" (
@@ -45,25 +38,17 @@ CREATE TABLE "employees" (
 );
 
 CREATE TABLE "salaries" (
-    "id" SERIAL   NOT NULL,
     "emp_no" INT   NOT NULL,
     "salary" MONEY   NOT NULL,
     "from_date" DATE   NOT NULL,
-    "to_date" DATE   NOT NULL,
-    CONSTRAINT "pk_salaries" PRIMARY KEY (
-        "id"
-     )
+    "to_date" DATE   NOT NULL
 );
 
 CREATE TABLE "titles" (
-    "id" SERIAL   NOT NULL,
     "emp_no" INT   NOT NULL,
     "title" VARCHAR(30)   NOT NULL,
     "from_date" DATE   NOT NULL,
-    "to_date" DATE   NOT NULL,
-    CONSTRAINT "pk_titles" PRIMARY KEY (
-        "id"
-     )
+    "to_date" DATE   NOT NULL
 );
 
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
