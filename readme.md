@@ -24,7 +24,7 @@ Inspect the CSVs and sketch out an ERD of the tables.
 
 ## **_Results_**
 1. Database Employee was created in postgresSQL. Six tables in CSV format were imported into this database. An Entity Relationship Diagram (ERD) was created via [QUICKDBD](https://www.quickdatabasediagrams.com/) (employee ERD.sql).
-![ERD](https://github.com/hanyang2019/Project_Employee_Data-_Base/blob/master/employee%20ERD.png?raw=true)
+![ERD](https://github.com/hanyang2019/Project_Employee_Database/blob/master/Images/employee%20ERD.png?raw=true)
 
 2. Eight queries were conducted in postgreSQL (employee_query.sql).
 
@@ -43,4 +43,4 @@ Inspect the CSVs and sketch out an ERD of the tables.
 
 * One additional query was conducted to investigate the relationship of job title and its average salary.
 
-  ![Average_Salary_by_Title](https://github.com/hanyang2019/Project_Employee_Data-_Base/blob/master/Average_Salary_by_Title.png?raw=true)
+  ![Average_Salary_by_Title](https://github.com/hanyang2019/Project_Employee_Database/blob/master/Images/Average_Salary_by_Title.png?raw=true)
