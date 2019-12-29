@@ -1,3 +1,6 @@
 Password.py
 employee_DB_ERD.png
 employee_db.sql
+.ipynb_checkpoints
+__pycache__
+.DS_Store
